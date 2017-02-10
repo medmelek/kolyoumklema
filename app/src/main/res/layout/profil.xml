@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26ff0004">
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/a"
+        android:background="@drawable/a"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/b"
+        android:layout_alignEnd="@+id/b" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/b"
+        android:layout_below="@+id/a"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/b" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/c"
+        android:layout_below="@+id/b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/c" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/d"
+        android:layout_below="@+id/c"
+        android:layout_alignRight="@+id/c"
+        android:layout_alignEnd="@+id/c"
+        android:background="@drawable/d" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choix"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/a"
+        android:layout_alignBottom="@+id/d"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/nom"
+        android:layout_below="@+id/d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/choix"
+        android:layout_alignEnd="@+id/choix"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Modifier !"
+        android:id="@+id/modifier"
+        android:layout_below="@+id/nom"
+        android:layout_centerHorizontal="true"
+        android:background="#cc000000"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

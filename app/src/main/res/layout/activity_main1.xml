@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.sem.isetch.kolyoumkelma.MainActivity1"
+    android:background="@drawable/back">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/startpause"
+        android:layout_alignRight="@+id/content"
+        android:layout_alignEnd="@+id/content"
+        android:layout_alignBottom="@+id/startpause"
+        android:background="#bcffffff">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/about"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/about"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/startpause"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/startpause"
+        android:id="@+id/content"></FrameLayout>
+
+</RelativeLayout>
